@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Angular UI </title>
+        <link rel='stylesheet' href='public/lib/ng-grid/ng-grid.min.css' />
+        <style>
+            .grid {
+                height: 400px;
+                width: 400px;
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body ng-app='MyApp'>
+    <div ng-controller='MainController'>
+        <div class='grid' ng-grid='gridOpts'></div>
+
+        <h1 ng-repeat='s in selected'> {{s.alterEgo}} </h1>
+    </div>
+    <script src='public/lib/jquery/dist/jquery.min.js'></script>
+    <script src='public/lib/angular/angular.min.js'></script>
+    <script src='public/lib/ng-grid/ng-grid-2.0.13.min.js'></script>
+    <script src='app.js'></script>
+    </body>
+</html>

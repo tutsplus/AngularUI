@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Angular UI </title>
+
+        <link rel='stylesheet' href='public/lib/codemirror/lib/codemirror.css'>
+        <link rel='stylesheet' href='public/lib/codemirror/theme/solarized.css'>
+        <style>
+
+            .ace_editor {
+                height: 400px; 
+            }
+        </style>
+    </head>
+    <body ng-app='MyApp'>
+    <div ng-controller='MainController'>
+    
+        <div ui-codemirror='cmOpts'> </div>
+
+        <div ui-ace='aceOpts'></div>
+    </div>
+
+
+
+    <script src='public/lib/angular/angular.min.js'></script>
+
+    <script src='public/lib/codemirror/lib/codemirror.js'></script>
+    <script src='public/lib/codemirror/mode/javascript/javascript.js'></script>
+    <script src='public/lib/angular-ui-codemirror/ui-codemirror.min.js'></script>
+
+
+    <script src='public/lib/ace-builds/src-min-noconflict/ace.js'></script>
+    <script src='public/lib/angular-ui-ace/ui-ace.js'></script>
+
+    <script src='app.js'></script>
+    </body>
+</html>

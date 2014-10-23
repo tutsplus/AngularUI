@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Angular UI </title>
+    </head>
+    <body ng-app='MyApp'>
+    <div ng-controller='MainController'>
+        <p> <input ng-model='val1' ui-mask='{{mask1}}' /> </p>
+        <p> {{val1}}</p>
+    
+        <p> <input ng-model='val2' ui-mask='{{mask2}}' /> </p>
+        <p> {{val2}}</p>
+    
+        <p> <input ng-model='val3' ui-mask='{{mask3}}' /> </p>
+        <p> {{val3}}</p>
+    </div>
+    <script src='public/lib/angular/angular.min.js'></script>
+    <script src='public/lib/angular-ui-utils/ui-utils.min.js'></script>
+    <script src='app.js'></script>
+    </body>
+</html>

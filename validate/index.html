@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Angular UI </title>
+        <style>
+
+            input.ng-invalid.ng-dirty {
+                border: 1px solid red; 
+            }
+        </style>
+    </head>
+    <body ng-app='MyApp'>
+    <div ng-controller='MainController'>
+    
+        <form name='myForm'> 
+            <p> <input name='password' ng-model='password' required /> </p>
+
+            <p> <input 
+                name='confirm_password' 
+                ng-model='confirm_password' 
+                required 
+                ui-validate='"validatePassword($value)"'
+                ui-validate-watch='"password"'
+                /></p>
+
+            <p> <button ng-disabled='!myForm.$valid'> Submit </button>
+        </form>
+    
+    
+    </div>
+    <script src='public/lib/angular/angular.min.js'></script>
+    <script src='public/lib/angular-ui-utils/ui-utils.min.js'></script>
+    <script src='app.js'></script>
+    </body>
+</html>

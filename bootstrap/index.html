@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Angular UI </title>
+        <link rel='stylesheet' href='public/lib/bootstrap/dist/css/bootstrap.min.css'>
+    </head>
+    <body ng-app='MyApp'>
+    <div ng-controller='MainController'>
+        <accordion> 
+            <accordion-group ng-repeat='s in sections' heading='{{s.heading}}'>
+                {{s.content}}
+            </accordion-group>
+        </accordion>
+    </div>
+    <script src='public/lib/angular/angular.min.js'></script>
+    <script src='public/lib/angular-bootstrap/ui-bootstrap-tpls.min.js'></script>
+    <script src='app.js'></script>
+    </body>
+</html>

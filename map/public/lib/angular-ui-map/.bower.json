@@ -1,0 +1,20 @@
+{
+  "name": "angular-ui-map",
+  "version": "0.5.0",
+  "main": "./ui-map.js",
+  "dependencies": {
+    "angular": "1.x",
+    "angular-ui-utils": "0.x"
+  },
+  "homepage": "https://github.com/angular-ui/ui-map",
+  "_release": "0.5.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.5.0",
+    "commit": "23486ca12b70e3ed7200ff2e2e117f76a52851d6"
+  },
+  "_source": "git://github.com/angular-ui/ui-map.git",
+  "_target": "~0.5.0",
+  "_originalSource": "angular-ui-map",
+  "_direct": true
+}

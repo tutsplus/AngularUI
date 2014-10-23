@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Angular UI </title>
+        <style>
+            table, td, th {
+                border: 1px solid black; 
+                border-collapse: collapse;
+            }
+
+            td, th {
+                padding: 5px; 
+            }
+
+        </style>
+    </head>
+    <body ng-app='MyApp'>
+    <div ng-controller='MainController'>
+    
+        <button ng-click='field = ""'> All </button>
+        <button ng-click='field = "firstName"'> First Name </button>
+        <button ng-click='field = "lastName"'> Last Name </button>
+
+        <table>  
+            <tr>
+                <th> ID </th>
+                <th> First Name </th>
+                <th> Last Name </th>
+            </tr>
+            <tr ng-repeat='item in items | unique: field'>
+                <td> {{ item.id }} </td>
+                <td> {{ item.firstName }}</td>
+                <td> {{ item.lastName }}</td>
+            </tr>
+        </table>
+    
+    </div>
+    <script src='public/lib/angular/angular.min.js'></script>
+    <script src='public/lib/angular-ui-utils/ui-utils.min.js'></script>
+    <script src='app.js'></script>
+    </body>
+</html>
